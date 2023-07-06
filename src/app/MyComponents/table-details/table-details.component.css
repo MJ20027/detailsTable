@@ -1,0 +1,19 @@
+table{
+    /* margin-top: 17px;
+    margin-bottom: 17px;
+    margin-left: 10px;
+    margin-right: 10px; */
+      font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 90%;
+
+  
+}
+
+table,tr,td,th{
+    border: 1px solid black;
+    padding: 3px;
+}
+.heading{
+    background-color: #cecece;
+}

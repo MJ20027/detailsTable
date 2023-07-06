@@ -1,0 +1,68 @@
+[{
+    "momId": "MOM-20230626104203",
+    "title": "Internal Meeting",
+    "venue": "Office",
+    "meetingDate": "26/06/2023 11:00",
+    "chairPerson": "Priya Srivastav",
+    "mode": "In-Person",
+    "keywords": "Passenger Business & TCOE",
+    "momAttendeesResponse": [
+      {
+        "attendeesId": "ATN-202306261432241",
+        "name": "Priya Srivastav",
+        "designation": "PPE",
+        "organization": "CRIS",
+        "email": "priya@cris.org.in",
+        "type": "internal"
+      },
+      {
+        "attendeesId": "ATN-202306261432242",
+        "name": "Rachna Singh rathore",
+        "designation": "PPE",
+        "organization": "CRIS",
+        "email": "rachna@cris.org.in",
+        "type": "internal"
+      },
+      {
+        "attendeesId": "ATN-202306261432243",
+        "name": "Bharti Sigh",
+        "designation": "PPE",
+        "organization": "CRIS",
+        "email": "bharti@cris.org.in",
+        "type": "internal"
+      }
+    ],
+    "momActionResponse": [
+      {
+        "title": "Internal Meeting",
+        "momId": "MOM-20230626104203",
+        "actionId": "ACT-202306261432242",
+        "decissionPoint": "Review of TCOE",
+        "actionPoint": "To be done by Rachna",
+        "status": "OPEN"
+      },
+      {
+        "title": "Internal Meeting",
+        "momId": "MOM-20230626104203",
+        "actionId": "ACT-202306261432241",
+        "decissionPoint": "Review Passenger Business",
+        "actionPoint": "To be done by Bharti",
+        "status": "CLOSE"
+      }
+    ],
+    "editedBy": "priya@cris.org.in",
+    "editTime": "26/06/2023 14:51",
+    "remarks": "Make it final 3",
+    "status": "APPROVED",
+    "linkedMOM": "MOM-20230626102919",
+    "pdfFile": "",
+    "momEditHistoryResponse": [
+      {
+        "momEditId": "MEH-20230626145109",
+        "editedBy": "priya@cris.org.in",
+        "editTime": "26/06/2023 14:47",
+        "remarks": "Make it final 3",
+        "status": "UPDATED"
+      }
+    ]
+  }]

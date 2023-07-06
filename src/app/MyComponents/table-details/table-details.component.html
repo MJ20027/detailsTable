@@ -1,72 +1,128 @@
 
 
 
+<table *ngFor="let datas of OrigData">
+    <tr >
+        <th class="heading">momId</th>
+        <td colspan="5">{{datas.momId}}</td>
+    </tr>
+    <tr>
+        <th class="heading">title</th>
+        <td colspan="5">{{datas.title}}</td>
+    </tr>
+    <tr>
+        <th class="heading">venue</th>
+        <td colspan="5">{{datas.venue}}</td>
+    </tr>
+    <tr>
+        <th class="heading">meetingDate</th>
+        <td colspan="5">{{datas.meetingDate}}</td>
+    </tr>
+    <tr>
+        <th class="heading">chairPerson</th>
+        <td colspan="5">{{datas.chairPerson}}</td>
+    </tr>
+    <tr>
+        <th class="heading">mode</th>
+        <td colspan="5">{{datas.mode}}</td>
+    </tr>
+    <tr>
+        <th class="heading">keywords</th>
+        <td colspan="5">{{datas.keywords}}</td>
+    </tr>
 
-<table>
-    <tr>
-        <th>momId</th>
-        <td>MOM-20230626104203</td>
-    </tr>
-    <tr>
-        <th>title</th>
-        <td>Internal Meeting</td>
-    </tr>
-    <tr>
-        <th>venue</th>
-        <td>Office</td>
-    </tr>
-    <tr>
-        <th>meetingDate</th>
-        <td>26/06/2023 11:00</td>
-    </tr>
-    <tr>
-        <th>chairPerson</th>
-        <td>Priya Srivastav</td>
-    </tr>
-    <tr>
-        <th>mode</th>
-        <td>In-Person</td>
-    </tr>
-    <tr>
-        <th>keywords</th>
-        <td>Passenger Business & TCOE</td>
-    </tr>
-    <!-- <tr>
-        <th>momAttendeesResponse</th>
-    </tr> -->
-    
     <!-- momAttendeesResponse -->
 
 
+    <tr>
+        <th colspan="6" class="heading">momAttendeesResponse</th>
+    </tr>
+    <tr>
+        <th class="heading">attendeesId</th>
+        <th class="heading">name</th>
+        <th class="heading">designation</th>
+        <th class="heading">organization</th>
+        <th class="heading">email</th>
+        <th class="heading">type</th>
+    </tr>
+    <tr *ngFor="let momAttendeesResponseData of datas.momAttendeesResponse">
+        <td>{{momAttendeesResponseData.attendeesId}}</td>
+        <td>{{momAttendeesResponseData.name}}</td>
+        <td>{{momAttendeesResponseData.designation}}</td>
+        <td>{{momAttendeesResponseData.organization}}</td>
+        <td>{{momAttendeesResponseData.email}}</td>
+        <td>{{momAttendeesResponseData.type}}</td>
+    </tr>
+    
     <!-- momActionResponse -->
     
     <tr>
-        <th>editedBy</th>
-        <td>priya@cris.org.in</td>
+        <th colspan="6" class="heading">momActionResponse</th>
     </tr>
     <tr>
-        <th>editTime</th>
-        <td>26/06/2023 14:51</td>
+        <th class="heading">title</th>
+        <th class="heading">momId</th>
+        <th class="heading">actionId</th>
+        <th class="heading">decissionPoint</th>
+        <th class="heading">actionPoint</th>
+        <th class="heading">status</th>
     </tr>
-    <tr>
-        <th>remarks</th>
-        <td>Make it final 3</td>
-    </tr>
-    <tr>
-        <th>status</th>
-        <td>APPROVED</td>
-    </tr>
-    <tr>
-        <th>linkedMOM</th>
-        <td>MOM-20230626102919</td>
-    </tr>
-    <tr>
-        <th>pdfFile</th>
-        <td></td>
+    <tr *ngFor="let momActionResponseData of datas.momActionResponse">
+        <td>{{momActionResponseData.title}}</td>
+        <td>{{momActionResponseData.momId}}</td>
+        <td>{{momActionResponseData.actionId}}</td>
+        <td>{{momActionResponseData.decissionPoint}}</td>
+        <td>{{momActionResponseData.actionPoint}}</td>
+        <td>{{momActionResponseData.status}}</td>
     </tr>
 
-    <tr><th>momEditHistoryResponse</th></tr>
+
+    
+    <tr>
+        <th class="heading">editedBy</th>
+        <td>{{datas.editedBy}}</td>
+    </tr>
+    <tr>
+        <th class="heading">editTime</th>
+        <td>{{datas.editTime}}</td>
+    </tr>
+    <tr>
+        <th class="heading">remarks</th>
+        <td>{{datas.remarks}}</td>
+    </tr>
+    <tr>
+        <th class="heading">status</th>
+        <td>{{datas.status}}</td>
+    </tr>
+    <tr>
+        <th class="heading">linkedMOM</th>
+        <td>{{datas.linkedMOM}}</td>
+    </tr>
+    <tr>
+        <th class="heading">pdfFile</th>
+        <td>{{datas.pdfFile}}</td>
+    </tr>
+
 
     <!-- momEditHistoryResponse -->
+
+    <tr>
+        <th colspan="6" class="heading">momEditHistoryResponse</th>
+    </tr>
+    <tr>
+        <th class="heading">title</th>
+        <th class="heading">momId</th>
+        <th class="heading">actionId</th>
+        <th class="heading">decissionPoint</th>
+        <th class="heading">actionPoint</th>
+        <th class="heading">status</th>
+    </tr>
+    <tr *ngFor="let momEditHistoryResponseData of datas.momEditHistoryResponse">
+        <td>{{momEditHistoryResponseData.momEditId}}</td>
+        <td>{{momEditHistoryResponseData.editedBy}}</td>
+        <td>{{momEditHistoryResponseData.editTime}}</td>
+        <td>{{momEditHistoryResponseData.remarks}}</td>
+        <td>{{momEditHistoryResponseData.status}}</td>
+    </tr>
 
 </table>
