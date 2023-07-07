@@ -65,7 +65,7 @@ export class TableDetailsComponent {
       var imgHeight = canvas.height * imgWidth / canvas.width;   
       const pdf = new jsPDF('p', 'mm', 'a4'); 
       pdf.addImage(imgData, 'PNG', 1, 1, imgWidth, imgHeight)
-      pdf.save('new-file.pdf'); 
+      pdf.save('newfile.pdf'); 
     });
   }
 }
