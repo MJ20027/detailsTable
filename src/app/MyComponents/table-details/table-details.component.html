@@ -1,7 +1,7 @@
 
 
-
-<table *ngFor="let datas of OrigData">
+<div id="contentToConvert">
+<table *ngFor="let datas of OrigData" >
     <tr >
         <th class="heading">momId</th>
         <td colspan="5">{{datas.momId}}</td>
@@ -76,8 +76,6 @@
         <td>{{momActionResponseData.status}}</td>
     </tr>
 
-
-    
     <tr>
         <th class="heading">editedBy</th>
         <td>{{datas.editedBy}}</td>
@@ -110,19 +108,23 @@
         <th colspan="6" class="heading">momEditHistoryResponse</th>
     </tr>
     <tr>
-        <th class="heading">title</th>
-        <th class="heading">momId</th>
-        <th class="heading">actionId</th>
-        <th class="heading">decissionPoint</th>
-        <th class="heading">actionPoint</th>
-        <th class="heading">status</th>
+        <th class="heading">momEditId</th>
+        <th class="heading">editedBy</th>
+        <th class="heading">editTime</th>
+        <th class="heading">remarks</th>
+        <th class="heading" colspan="2">status</th>
     </tr>
     <tr *ngFor="let momEditHistoryResponseData of datas.momEditHistoryResponse">
         <td>{{momEditHistoryResponseData.momEditId}}</td>
         <td>{{momEditHistoryResponseData.editedBy}}</td>
         <td>{{momEditHistoryResponseData.editTime}}</td>
         <td>{{momEditHistoryResponseData.remarks}}</td>
-        <td>{{momEditHistoryResponseData.status}}</td>
+        <td colspan="2">{{momEditHistoryResponseData.status}}</td>
     </tr>
 
 </table>
+</div>
+
+<div class="btnDiv">
+    <button class="btn" (click)="convetToPDF()"> APPROVE </button>
+</div>
